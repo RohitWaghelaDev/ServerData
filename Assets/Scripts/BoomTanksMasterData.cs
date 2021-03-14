@@ -43,7 +43,6 @@ public struct TankStatsUpgrade
 
     public int health;
     public int speed;
-    public int avarage;
     public int zoom;
     public int DamagePerBomb;
     public string CurrencyType;
