@@ -48,7 +48,7 @@ public struct TankStatsUpgrade
     public int DamagePerBomb;
     public string CurrencyType;
     public int Price;
-
+    public float upgradeTime;
 
 
 }
