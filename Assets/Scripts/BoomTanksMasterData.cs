@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
-
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 
 
@@ -28,6 +29,14 @@ public struct TankPriceMasterData
     public List<TankPrice> Data;
 
 
+}
+
+
+[CreateAssetMenu(menuName = "TankPriceMasterData")]
+
+public class TankPriceMasterDataSC : ScriptableObject
+{
+    public TankPriceMasterData TankPriceMasterData;
 }
 
 
@@ -56,6 +65,13 @@ public struct TankStatsUpgradeMasterData
     public List<TankStatsUpgrade> Data;
 }
 
+[CreateAssetMenu(menuName = "TankStatsUpgradeMasterData")]
+
+public class TankStatsUpgradeMasterDataSC : ScriptableObject
+{
+    public TankStatsUpgradeMasterData TankStatsUpgradeMasterData;
+}
+
 
 [System.Serializable]
 public struct TankSkin
@@ -78,7 +94,12 @@ public struct TankSkinMasterData
     public List<TankSkin> Data;
 }
 
+[CreateAssetMenu(menuName = "TankSkinMasterData")]
 
+public class TankSkinMasterDataSC : ScriptableObject
+{
+    public TankSkinMasterData TankSkinMasterData;
+}
 
 [System.Serializable]
 public struct Hanger
@@ -95,6 +116,13 @@ public struct HangerMasterData
 {
     public bool Status;
     public List<Hanger> Data;
+}
+
+[CreateAssetMenu(menuName = "HangerMasterData")]
+
+public class HangerMasterDataSC : ScriptableObject
+{
+    public HangerMasterData HangerMasterData;
 }
 
 
@@ -116,6 +144,17 @@ public struct SlotMasterData
 }
 
 
+[CreateAssetMenu(menuName = "SlotMasterData")]
+
+public class SlotMasterDataSC : ScriptableObject
+{
+    public SlotMasterData SlotMasterData;
+}
+
+
+
+
+
 [System.Serializable]
 public struct Weapon
 {
@@ -129,6 +168,8 @@ public struct Weapon
 
 
 }
+
+
 [System.Serializable]
 public struct WeaponMasterData
 {
@@ -136,11 +177,20 @@ public struct WeaponMasterData
     public List<Weapon> Data;
 }
 
+[CreateAssetMenu(menuName = "WeaponMasterData")]
+public class WeaponMasterDatasc : ScriptableObject
+{
+    public WeaponMasterData WeaponMasterData;
+
+}
+
+
+
 [System.Serializable]
 public class TankMasterData
 {
 
-    public TankPriceMasterData TankMastersData;
+    public TankPriceMasterData TankPriceMastersData;
     public TankStatsUpgradeMasterData TankStatsUpgradeMasterData;
     public TankSkinMasterData TankSkinMasterData;
     public HangerMasterData HangerMasterData;
@@ -151,7 +201,7 @@ public class TankMasterData
     public TankMasterData()
     {
 
-        TankMastersData.Data = new List<TankPrice>();
+        TankPriceMastersData.Data = new List<TankPrice>();
         TankStatsUpgradeMasterData.Data = new List<TankStatsUpgrade>();
         TankSkinMasterData.Data = new List<TankSkin>();
         HangerMasterData.Data = new List<Hanger>();
@@ -173,44 +223,107 @@ public class BoomTanksMasterData : MonoBehaviour
     const string masterLink = "http://192.168.43.204/boomtanks/api/MasterData/tankmasterdetails";
 
 
-    public TankMasterData TankMasterData;
+     TankMasterData TankMasterData;
 
-    public List<string> npcNamesList;
+
+    public TankPriceMasterDataSC TankPriceMasterDataSC;
+    public TankSkinMasterDataSC TankSkinMasterDataSC;
+    public TankStatsUpgradeMasterDataSC TankStatsUpgradeMasterDataSC;
+    public HangerMasterDataSC HangerMasterDataSC;
+    public SlotMasterDataSC SlotMasterDataSC;
+    public WeaponMasterDatasc WeaponMasterDatasc;
 
     #endregion
 
-    private void Start()
+
+    [ContextMenu("Create Json")]
+    public void CreateJSonFile()
     {
-        StartCoroutine(LoadMasterData());
+        TankMasterData TankMasterData = new TankMasterData();
+
+        TankMasterData.TankPriceMastersData = TankPriceMasterDataSC.TankPriceMasterData;
+        TankMasterData.TankSkinMasterData = TankSkinMasterDataSC.TankSkinMasterData;
+        TankMasterData.TankStatsUpgradeMasterData = TankStatsUpgradeMasterDataSC.TankStatsUpgradeMasterData;
+        TankMasterData.HangerMasterData = HangerMasterDataSC.HangerMasterData;
+        TankMasterData.SlotMasterData = SlotMasterDataSC.SlotMasterData;
+        TankMasterData.WeaponMasterData = WeaponMasterDatasc.WeaponMasterData;
+
+        SaveJsonDataInStreamingAssetFolder(TankMasterData, "BoomTanksMAsterData");
     }
-    string Authenticate(string username, string password)
-    {
-        string auth = username + ":" + password;
-        auth = System.Convert.ToBase64String(System.Text.Encoding.GetEncoding("ISO-8859-1").GetBytes(auth));
-        auth = "Basic " + auth;
-        return auth;
-    }
-    public IEnumerator LoadMasterData()
+
+    public void SaveJsonDataInStreamingAssetFolder<T>(T t, string fileName)
     {
 
-        string authorization = Authenticate("boomtanks", "indian@1361");
+        string jsonString = JsonUtility.ToJson(t);
+        string filePath = Application.streamingAssetsPath + fileName;
+        Debug.Log("saving to  " + filePath);
 
-        UnityWebRequest www = UnityWebRequest.Get(masterLink);
-        www.SetRequestHeader("AUTHORIZATION", authorization);
-        yield return www.SendWebRequest();
-
-        if (www.isNetworkError || www.isHttpError)
+        if (File.Exists(Application.streamingAssetsPath + fileName))
         {
-            Debug.Log(www.error);
-
-        }
-        else if (www.isDone)
-        {
-            string jsonString = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
-            Debug.Log(jsonString);
-            TankMasterData = JsonUtility.FromJson<TankMasterData>(jsonString);
+            File.Delete(Application.streamingAssetsPath + fileName);
         }
 
+        File.WriteAllText(Application.streamingAssetsPath + fileName, jsonString);
+
+
     }
+
+    public void LoadJsonDataFromStramingAssetFolder<T>(ref T t, string fileName)
+    {
+
+        string filepath = Path.Combine(Application.streamingAssetsPath, fileName);
+        Debug.Log("loading datat from " + filepath);
+        if (File.Exists(filepath))
+        {
+            
+            string jsonString = File.ReadAllText(filepath);
+            t = JsonUtility.FromJson<T>(jsonString);
+        }
+        else
+        {
+            Debug.Log("*****  file not found *****");
+        }
+
+    }
+
+
+
+    #region serverData
+    /* private void Start()
+     {
+         StartCoroutine(LoadMasterData());
+     }
+     string Authenticate(string username, string password)
+     {
+         string auth = username + ":" + password;
+         auth = System.Convert.ToBase64String(System.Text.Encoding.GetEncoding("ISO-8859-1").GetBytes(auth));
+         auth = "Basic " + auth;
+         return auth;
+     }
+     public IEnumerator LoadMasterData()
+     {
+
+         string authorization = Authenticate("boomtanks", "indian@1361");
+
+         UnityWebRequest www = UnityWebRequest.Get(masterLink);
+         www.SetRequestHeader("AUTHORIZATION", authorization);
+         yield return www.SendWebRequest();
+
+         if (www.isNetworkError || www.isHttpError)
+         {
+             Debug.Log(www.error);
+
+         }
+         else if (www.isDone)
+         {
+             string jsonString = System.Text.Encoding.UTF8.GetString(www.downloadHandler.data);
+             Debug.Log(jsonString);
+             TankMasterData = JsonUtility.FromJson<TankMasterData>(jsonString);
+         }
+
+     }*/
+
+    #endregion
+
 }
 
