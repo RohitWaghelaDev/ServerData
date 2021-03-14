@@ -122,12 +122,6 @@ public struct SlotMasterData
 }
 
 
-
-
-
-
-
-
 [System.Serializable]
 public struct Weapon
 {
@@ -151,7 +145,29 @@ public struct WeaponMasterData
 }
 
 
+[System.Serializable]
+public struct GameMode
+{
 
+    public string gameMode;
+    public string longName;
+    public string  gameModeType;
+    public bool isTeamMatch;
+    public int expLevel;
+    public bool isAvailable;
+    public string modeDescription;
+    public string startDate;
+    public string endDate;
+
+}
+
+[System.Serializable]
+public struct GameModeData
+{
+    public bool Status;
+    public List<GameMode> Data;
+
+}
 
 [System.Serializable]
 public class TankMasterData
