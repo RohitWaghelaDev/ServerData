@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 017a1e26f6a69a641801a4b8186772c5, type: 3}
   m_Name: WeaponMasterData
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponMasterDatasc
+  m_EditorClassIdentifier: 
   WeaponMasterData:
     Status: 0
     Data: []

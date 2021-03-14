@@ -32,12 +32,6 @@ public struct TankPriceMasterData
 }
 
 
-[CreateAssetMenu(menuName = "TankPriceMasterData")]
-
-public class TankPriceMasterDataSC : ScriptableObject
-{
-    public TankPriceMasterData TankPriceMasterData;
-}
 
 
 [System.Serializable]
@@ -65,12 +59,7 @@ public struct TankStatsUpgradeMasterData
     public List<TankStatsUpgrade> Data;
 }
 
-[CreateAssetMenu(menuName = "TankStatsUpgradeMasterData")]
 
-public class TankStatsUpgradeMasterDataSC : ScriptableObject
-{
-    public TankStatsUpgradeMasterData TankStatsUpgradeMasterData;
-}
 
 
 [System.Serializable]
@@ -94,12 +83,6 @@ public struct TankSkinMasterData
     public List<TankSkin> Data;
 }
 
-[CreateAssetMenu(menuName = "TankSkinMasterData")]
-
-public class TankSkinMasterDataSC : ScriptableObject
-{
-    public TankSkinMasterData TankSkinMasterData;
-}
 
 [System.Serializable]
 public struct Hanger
@@ -118,12 +101,7 @@ public struct HangerMasterData
     public List<Hanger> Data;
 }
 
-[CreateAssetMenu(menuName = "HangerMasterData")]
 
-public class HangerMasterDataSC : ScriptableObject
-{
-    public HangerMasterData HangerMasterData;
-}
 
 
 
@@ -144,12 +122,7 @@ public struct SlotMasterData
 }
 
 
-[CreateAssetMenu(menuName = "SlotMasterData")]
 
-public class SlotMasterDataSC : ScriptableObject
-{
-    public SlotMasterData SlotMasterData;
-}
 
 
 
@@ -177,12 +150,6 @@ public struct WeaponMasterData
     public List<Weapon> Data;
 }
 
-[CreateAssetMenu(menuName = "WeaponMasterData")]
-public class WeaponMasterDatasc : ScriptableObject
-{
-    public WeaponMasterData WeaponMasterData;
-
-}
 
 
 
@@ -248,7 +215,7 @@ public class BoomTanksMasterData : MonoBehaviour
         TankMasterData.SlotMasterData = SlotMasterDataSC.SlotMasterData;
         TankMasterData.WeaponMasterData = WeaponMasterDatasc.WeaponMasterData;
 
-        SaveJsonDataInStreamingAssetFolder(TankMasterData, "BoomTanksMAsterData");
+        SaveJsonDataInStreamingAssetFolder(TankMasterData, "/BoomTanksMAsterData");
     }
 
     public void SaveJsonDataInStreamingAssetFolder<T>(T t, string fileName)
