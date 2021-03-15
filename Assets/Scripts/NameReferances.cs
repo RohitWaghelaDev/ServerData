@@ -18,4 +18,9 @@ public class NameReferances : MonoBehaviour
         Custom2 = 15, Custom3 = 16, Custom4 = 17, Custom5 = 18, None = 0 };
 
     public enum WeaponID : int { Invisible = 1, Emp = 2, AirStrike = 3, NavalStrike = 4, FlashBang = 5, None = 0 }
+
+
+    public enum MissionType { KillWithTank, Kill, DealDamageWithTank, DealDamage, FlagCapture, Beaconcapture, HostileBeaconCapture, LoginWithFacebook, WatchAddd, Rank }
+
+
 }

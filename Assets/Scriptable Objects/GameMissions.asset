@@ -1,0 +1,297 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c8300b86cdd7043a500361b8995d67, type: 3}
+  m_Name: GameMissions
+  m_EditorClassIdentifier: 
+  GameMissions:
+    Status: 0
+    Data:
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0
+    - ID: 0
+      missionType: 
+      ExpLevel: 0
+      supportedGameModes: []
+      IsProgessiveMission: 0
+      MultipleMissionOfSameTypeSupported: 0
+      Header: 
+      Description: 
+      Key: 
+      Value: 0
+      RewardValue: 0
+      RewardType: 
+      SkipMissionCost: 0
+      WatchAddValue: 0

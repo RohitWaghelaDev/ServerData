@@ -33,7 +33,6 @@ public struct TankPriceMasterData
 
 
 
-
 [System.Serializable]
 public struct TankStatsUpgrade
 {
@@ -148,15 +147,16 @@ public struct WeaponMasterData
 public struct GameMode
 {
 
-    public string gameMode;
-    public string longName;
-    public string  gameModeType;
-    public bool isTeamMatch;
-    public int expLevel;
-    public bool isAvailable;
-    public string modeDescription;
-    public string startDate;
-    public string endDate;
+    public string GameModeName;   // QuickMatch,  DeathMatch , TeamDeathMatch,CaptureTheFlag, BeaconCapture
+    public string LongName;       // Quick Match,  Death Match , Team Death Match,Capture The Flag, Beacon Capture
+    public string  GameModeType;  //      Indivisual,Team,Special
+    public bool IsTeamMatch;
+    public int ExpLevel;
+    public bool IsAvailable;
+    [TextArea(5,10)]
+    public string ModeDescription;
+    public string StartDate;
+    public string EndDate;
 
 }
 
@@ -167,6 +167,40 @@ public struct GameModeData
     public List<GameMode> Data;
 
 }
+
+
+
+
+
+[System.Serializable]
+public struct MissionDescriptor
+{
+    public int ID;
+    public string missionType;
+    public int ExpLevel;
+    public string[] supportedGameModes; // QuickMatch,  DeathMatch , TeamDeathMatch,CaptureTheFlag, BeaconCapture  ** all game modes shouls be without space
+    public bool IsProgessiveMission;
+    public bool MultipleMissionOfSameTypeSupported;
+    public string Header;
+    public string Description;
+    public string Key;
+    public int Value;
+    public int RewardValue;
+    public string RewardType;
+    public int SkipMissionCost;
+    public int WatchAddValue;
+
+
+}
+
+[System.Serializable]
+public struct GameMissions 
+{
+    public bool Status;
+    public List<MissionDescriptor> Data;
+
+}
+
 
 [System.Serializable]
 public class TankMasterData
