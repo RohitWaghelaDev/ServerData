@@ -15,12 +15,12 @@ MonoBehaviour:
   GameModeData:
     Status: 1
     Data:
-    - GameModeName: 
-      LongName: 
-      GameModeType: 
-      IsTeamMatch: 0
+    - GameModeName: QuickMatch
+      LongName: Quick Match
+      GameModeType: Team
+      IsTeamMatch: 1
       ExpLevel: 0
-      IsAvailable: 0
+      IsAvailable: 1
       ModeDescription: '
 
 
@@ -29,38 +29,38 @@ MonoBehaviour:
 '
       StartDate: 
       EndDate: 
-    - GameModeName: 
-      LongName: 
-      GameModeType: 
+    - GameModeName: DeathMatch
+      LongName: Death Match
+      GameModeType: Individual
       IsTeamMatch: 0
+      ExpLevel: 3
+      IsAvailable: 1
+      ModeDescription: 
+      StartDate: 
+      EndDate: 
+    - GameModeName: TeamDeathMatch
+      LongName: Team Death Match
+      GameModeType: Team
+      IsTeamMatch: 1
       ExpLevel: 0
+      IsAvailable: 1
+      ModeDescription: 
+      StartDate: 
+      EndDate: 
+    - GameModeName: CaptureTheFlag
+      LongName: Capture The Flag
+      GameModeType: Special
+      IsTeamMatch: 1
+      ExpLevel: 6
       IsAvailable: 0
       ModeDescription: 
       StartDate: 
       EndDate: 
-    - GameModeName: 
-      LongName: 
-      GameModeType: 
-      IsTeamMatch: 0
-      ExpLevel: 0
-      IsAvailable: 0
-      ModeDescription: 
-      StartDate: 
-      EndDate: 
-    - GameModeName: 
-      LongName: 
-      GameModeType: 
-      IsTeamMatch: 0
-      ExpLevel: 0
-      IsAvailable: 0
-      ModeDescription: 
-      StartDate: 
-      EndDate: 
-    - GameModeName: 
-      LongName: 
-      GameModeType: 
-      IsTeamMatch: 0
-      ExpLevel: 0
+    - GameModeName: BeaconCapture
+      LongName: Beacon capture
+      GameModeType: Special
+      IsTeamMatch: 1
+      ExpLevel: 10
       IsAvailable: 0
       ModeDescription: 
       StartDate: 

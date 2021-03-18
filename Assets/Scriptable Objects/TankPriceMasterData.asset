@@ -9,9 +9,69 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 73d355a8a5dc1134a85a777be1ee383e, type: 3}
   m_Name: TankPriceMasterData
-  m_EditorClassIdentifier: Assembly-CSharp::TankPriceMasterDataSC
+  m_EditorClassIdentifier: 
   TankPriceMasterData:
     Status: 1
-    Data: []
+    Data:
+    - TankName: LittleGolem
+      CurrencyType: Gold
+      ExperienceLevel: 0
+      Price: 200
+    - TankName: Petriot
+      CurrencyType: Gold
+      ExperienceLevel: 2
+      Price: 250
+    - TankName: Erebus
+      CurrencyType: Gold
+      ExperienceLevel: 4
+      Price: 400
+    - TankName: Wrecker
+      CurrencyType: Gold
+      ExperienceLevel: 5
+      Price: 550
+    - TankName: Imugi
+      CurrencyType: Gold
+      ExperienceLevel: 6
+      Price: 800
+    - TankName: NightMare
+      CurrencyType: Gold
+      ExperienceLevel: 8
+      Price: 1100
+    - TankName: Cyclopse
+      CurrencyType: Gold
+      ExperienceLevel: 9
+      Price: 1300
+    - TankName: Typhoon
+      CurrencyType: Gold
+      ExperienceLevel: 11
+      Price: 1800
+    - TankName: Inferno
+      CurrencyType: Gold
+      ExperienceLevel: 12
+      Price: 2200
+    - TankName: BlackDeath
+      CurrencyType: Gold
+      ExperienceLevel: 13
+      Price: 2400
+    - TankName: Beast
+      CurrencyType: Gold
+      ExperienceLevel: 15
+      Price: 2600
+    - TankName: OverLord
+      CurrencyType: Gold
+      ExperienceLevel: 16
+      Price: 3000
+    - TankName: Shinigami
+      CurrencyType: Gold
+      ExperienceLevel: 17
+      Price: 3200
+    - TankName: Bhishma
+      CurrencyType: Gold
+      ExperienceLevel: 19
+      Price: 3800
+    - TankName: Titanizer
+      CurrencyType: Gold
+      ExperienceLevel: 20
+      Price: 4400

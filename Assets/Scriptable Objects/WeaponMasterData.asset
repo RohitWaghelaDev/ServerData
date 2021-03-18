@@ -13,5 +13,80 @@ MonoBehaviour:
   m_Name: WeaponMasterData
   m_EditorClassIdentifier: 
   WeaponMasterData:
-    Status: 0
-    Data: []
+    Status: 1
+    Data:
+    - WeaponName: FlashBang
+      WeaponType: Light
+      WeaponLevel: 1
+      CurrencyType: Silver
+      Price: 3000
+    - WeaponName: FlashBang
+      WeaponType: Light
+      WeaponLevel: 2
+      CurrencyType: Silver
+      Price: 5000
+    - WeaponName: FlashBang
+      WeaponType: Light
+      WeaponLevel: 3
+      CurrencyType: Silver
+      Price: 7000
+    - WeaponName: Invisible
+      WeaponType: Light
+      WeaponLevel: 1
+      CurrencyType: Silver
+      Price: 4000
+    - WeaponName: Invisible
+      WeaponType: Light
+      WeaponLevel: 2
+      CurrencyType: Silver
+      Price: 6000
+    - WeaponName: Invisible
+      WeaponType: Light
+      WeaponLevel: 3
+      CurrencyType: Silver
+      Price: 8000
+    - WeaponName: Emp
+      WeaponType: Light
+      WeaponLevel: 1
+      CurrencyType: Silver
+      Price: 6000
+    - WeaponName: Emp
+      WeaponType: Light
+      WeaponLevel: 2
+      CurrencyType: Silver
+      Price: 8000
+    - WeaponName: Emp
+      WeaponType: Light
+      WeaponLevel: 3
+      CurrencyType: Silver
+      Price: 10000
+    - WeaponName: AirStrike
+      WeaponType: Heavy
+      WeaponLevel: 1
+      CurrencyType: Silver
+      Price: 24000
+    - WeaponName: AirStrike
+      WeaponType: Heavy
+      WeaponLevel: 2
+      CurrencyType: Silver
+      Price: 28000
+    - WeaponName: AirStrike
+      WeaponType: Heavy
+      WeaponLevel: 3
+      CurrencyType: Silver
+      Price: 32000
+    - WeaponName: NavalStrike
+      WeaponType: Heavy
+      WeaponLevel: 1
+      CurrencyType: Silver
+      Price: 28000
+    - WeaponName: NavalStrike
+      WeaponType: Heavy
+      WeaponLevel: 2
+      CurrencyType: Silver
+      Price: 32000
+    - WeaponName: NavalStrike
+      WeaponType: Heavy
+      WeaponLevel: 3
+      CurrencyType: Silver
+      Price: 36000

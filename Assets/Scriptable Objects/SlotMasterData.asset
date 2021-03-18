@@ -9,20 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 1d8a01767450fe74d816aadb3ae26f92, type: 3}
   m_Name: SlotMasterData
-  m_EditorClassIdentifier: Assembly-CSharp::SlotMasterDataSC
+  m_EditorClassIdentifier: 
   SlotMasterData:
     Status: 1
     Data:
     - HangerID: 1
       SlotID: 1
       CurrencyType: Gold
-      Price: 100
+      Price: 0
     - HangerID: 1
       SlotID: 2
-      CurrencyType: Gold
-      Price: 100
+      CurrencyType: Silver
+      Price: 10000
     - HangerID: 1
       SlotID: 3
       CurrencyType: Gold
@@ -30,28 +30,88 @@ MonoBehaviour:
     - HangerID: 1
       SlotID: 4
       CurrencyType: Gold
-      Price: 100
+      Price: 1000
     - HangerID: 1
       SlotID: 5
       CurrencyType: Gold
-      Price: 100
+      Price: 5000
     - HangerID: 2
       SlotID: 1
       CurrencyType: Gold
-      Price: 200
+      Price: 0
     - HangerID: 2
       SlotID: 2
       CurrencyType: Gold
-      Price: 200
+      Price: 0
     - HangerID: 2
       SlotID: 3
       CurrencyType: Gold
-      Price: 200
+      Price: 0
     - HangerID: 2
       SlotID: 4
       CurrencyType: Gold
-      Price: 200
+      Price: 0
     - HangerID: 2
       SlotID: 5
       CurrencyType: Gold
-      Price: 200
+      Price: 0
+    - HangerID: 3
+      SlotID: 1
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 3
+      SlotID: 2
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 3
+      SlotID: 3
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 3
+      SlotID: 4
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 3
+      SlotID: 5
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 4
+      SlotID: 1
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 4
+      SlotID: 2
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 4
+      SlotID: 3
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 4
+      SlotID: 4
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 4
+      SlotID: 5
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 5
+      SlotID: 1
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 5
+      SlotID: 2
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 5
+      SlotID: 3
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 5
+      SlotID: 4
+      CurrencyType: Gold
+      Price: 0
+    - HangerID: 5
+      SlotID: 5
+      CurrencyType: Gold
+      Price: 0

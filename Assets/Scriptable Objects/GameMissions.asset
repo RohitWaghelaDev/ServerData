@@ -13,285 +13,43 @@ MonoBehaviour:
   m_Name: GameMissions
   m_EditorClassIdentifier: 
   GameMissions:
-    Status: 0
+    Status: 1
     Data:
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
+    - ID: 1
+      missionType: Kill
+      ExpLevel: 2
+      supportedGameModes:
+      - QuickMatch
+      - DeathMatch
+      - TeamDeathMatch
+      - CaptureTheFlag
+      - BeaconCapture
+      IsProgessiveMission: 1
       MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
+      Header: Destroy 20 Tanks
+      Description: Destroy 20 Tanks
       Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
+      Value: 20
+      RewardValue: 20
+      RewardType: Gold
+      SkipMissionCost: 5
+      WatchAddValue: 7
+    - ID: 2
+      missionType: WinBattle
+      ExpLevel: 2
+      supportedGameModes:
+      - QuickMatch
+      - DeathMatch
+      - TeamDeathMatch
+      - CaptureTheFlag
+      - BeaconCapture
+      IsProgessiveMission: 1
       MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
+      Header: Win 8 Battles
+      Description: Win 8 Battles
       Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
-    - ID: 0
-      missionType: 
-      ExpLevel: 0
-      supportedGameModes: []
-      IsProgessiveMission: 0
-      MultipleMissionOfSameTypeSupported: 0
-      Header: 
-      Description: 
-      Key: 
-      Value: 0
-      RewardValue: 0
-      RewardType: 
-      SkipMissionCost: 0
-      WatchAddValue: 0
+      Value: 8
+      RewardValue: 20
+      RewardType: Gold
+      SkipMissionCost: 5
+      WatchAddValue: 3

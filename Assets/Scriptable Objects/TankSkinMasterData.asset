@@ -9,9 +9,189 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 01bc49f1257cf0e4991d24d76559f5e0, type: 3}
   m_Name: TankSkinMasterData
-  m_EditorClassIdentifier: Assembly-CSharp::TankSkinMasterDataSC
+  m_EditorClassIdentifier: 
   TankSkinMasterData:
-    Status: 0
-    Data: []
+    Status: 1
+    Data:
+    - TankName: LittleGolem
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: LittleGolem
+      SkinName: Custom1
+      CurrencyType: Gold
+      Price: 75
+    - TankName: LittleGolem
+      SkinName: Custom2
+      CurrencyType: Gold
+      Price: 150
+    - TankName: Petriot
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Petriot
+      SkinName: Custom1
+      CurrencyType: Gold
+      Price: 150
+    - TankName: Petriot
+      SkinName: Fox
+      CurrencyType: Gold
+      Price: 500
+    - TankName: Erebus
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Erebus
+      SkinName: Custom1
+      CurrencyType: Gold
+      Price: 500
+    - TankName: Erebus
+      SkinName: Custom2
+      CurrencyType: Gold
+      Price: 250
+    - TankName: Wrecker
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Wrecker
+      SkinName: Fire
+      CurrencyType: Gold
+      Price: 750
+    - TankName: Wrecker
+      SkinName: Eagle
+      CurrencyType: Gold
+      Price: 1000
+    - TankName: Imugi
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Imugi
+      SkinName: Custom1
+      CurrencyType: Gold
+      Price: 150
+    - TankName: Imugi
+      SkinName: Jaguar
+      CurrencyType: Gold
+      Price: 1500
+    - TankName: NightMare
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: NightMare
+      SkinName: Camouflage
+      CurrencyType: Gold
+      Price: 75
+    - TankName: NightMare
+      SkinName: Custom1
+      CurrencyType: Gold
+      Price: 500
+    - TankName: Cyclopse
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Cyclopse
+      SkinName: Camouflage
+      CurrencyType: Gold
+      Price: 75
+    - TankName: Cyclopse
+      SkinName: Cheetah
+      CurrencyType: Gold
+      Price: 1500
+    - TankName: Typhoon
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Typhoon
+      SkinName: Camouflage
+      CurrencyType: Gold
+      Price: 250
+    - TankName: Typhoon
+      SkinName: Neon
+      CurrencyType: Gold
+      Price: 1500
+    - TankName: Inferno
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Inferno
+      SkinName: Custom1
+      CurrencyType: Gold
+      Price: 2000
+    - TankName: Inferno
+      SkinName: Panther
+      CurrencyType: Gold
+      Price: 2500
+    - TankName: BlackDeath
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: BlackDeath
+      SkinName: Camouflage
+      CurrencyType: Gold
+      Price: 250
+    - TankName: BlackDeath
+      SkinName: Tiger
+      CurrencyType: Gold
+      Price: 2500
+    - TankName: Beast
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Beast
+      SkinName: Camouflage
+      CurrencyType: Gold
+      Price: 1000
+    - TankName: Beast
+      SkinName: Custom1
+      CurrencyType: Gold
+      Price: 2000
+    - TankName: OverLord
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: OverLord
+      SkinName: Skull
+      CurrencyType: Gold
+      Price: 2000
+    - TankName: OverLord
+      SkinName: Custom1
+      CurrencyType: Gold
+      Price: 1000
+    - TankName: Shinigami
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Shinigami
+      SkinName: Skull
+      CurrencyType: Gold
+      Price: 2500
+    - TankName: Shinigami
+      SkinName: Custom1
+      CurrencyType: Gold
+      Price: 1500
+    - TankName: Bhishma
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Bhishma
+      SkinName: Lion
+      CurrencyType: Gold
+      Price: 2000
+    - TankName: Bhishma
+      SkinName: Camouflage
+      CurrencyType: Gold
+      Price: 750
+    - TankName: Titanizer
+      SkinName: Basic
+      CurrencyType: Gold
+      Price: 0
+    - TankName: Titanizer
+      SkinName: Shark
+      CurrencyType: Gold
+      Price: 2500
+    - TankName: Titanizer
+      SkinName: Camouflage
+      CurrencyType: Gold
+      Price: 750
