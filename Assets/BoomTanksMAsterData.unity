@@ -405,12 +405,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a624b766c0d4b9b4385f3ccbd7efc58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TankPriceMasterDataSC: {fileID: 11400000, guid: 5a3987f1b710ed546ab8d12585699ea0,
+  TankPriceMasterDataSC: {fileID: 11400000, guid: b98daa5f5d06e634cb8a3e83c01462d2,
     type: 2}
-  TankSkinMasterDataSC: {fileID: 11400000, guid: 2182b33cfd355044086fc8715bdbed1f,
+  TankSkinMasterDataSC: {fileID: 11400000, guid: 748c9431a838fa34caeec05d60d08b0d,
     type: 2}
-  TankStatsUpgradeMasterDataSC: {fileID: 11400000, guid: 56985a01f6d8bf24f8b020bff910a6de,
+  TankStatsUpgradeMasterDataSC: {fileID: 11400000, guid: 3d502e0e1f8049b4fa4db6975a034f37,
     type: 2}
   HangerMasterDataSC: {fileID: 11400000, guid: 4d0716ca7eb69574e8a87b862a661c40, type: 2}
   SlotMasterDataSC: {fileID: 11400000, guid: 416e46f7802e08b4d83923698c9450ee, type: 2}
-  WeaponMasterDatasc: {fileID: 11400000, guid: 0c653cdd0db46eb4b8e4daa64cc7ffd3, type: 2}
+  WeaponMasterDatasc: {fileID: 11400000, guid: 3ae599c9613389a4d8a22d1075d11e88, type: 2}
+  PlayerLevelMasterDataSC: {fileID: 11400000, guid: a304a1cf11ec8574692d4533cc33c31b,
+    type: 2}

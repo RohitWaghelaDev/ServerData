@@ -21,7 +21,7 @@ MonoBehaviour:
       IsTeamMatch: 1
       ExpLevel: 0
       IsAvailable: 1
-      ModeDescription: '
+      ModeDescription: 'This is a quickmatch
 
 
 
@@ -35,7 +35,12 @@ MonoBehaviour:
       IsTeamMatch: 0
       ExpLevel: 3
       IsAvailable: 1
-      ModeDescription: 
+      ModeDescription: 'This is a deathmatch
+
+
+
+
+'
       StartDate: 
       EndDate: 
     - GameModeName: TeamDeathMatch
@@ -44,7 +49,12 @@ MonoBehaviour:
       IsTeamMatch: 1
       ExpLevel: 0
       IsAvailable: 1
-      ModeDescription: 
+      ModeDescription: 'This is a team death match
+
+
+
+
+'
       StartDate: 
       EndDate: 
     - GameModeName: CaptureTheFlag
@@ -53,7 +63,12 @@ MonoBehaviour:
       IsTeamMatch: 1
       ExpLevel: 6
       IsAvailable: 0
-      ModeDescription: 
+      ModeDescription: 'This is a capture the flag
+
+
+
+
+'
       StartDate: 
       EndDate: 
     - GameModeName: BeaconCapture
@@ -62,6 +77,11 @@ MonoBehaviour:
       IsTeamMatch: 1
       ExpLevel: 10
       IsAvailable: 0
-      ModeDescription: 
+      ModeDescription: 'This is a beaconcapture
+
+
+
+
+'
       StartDate: 
       EndDate: 

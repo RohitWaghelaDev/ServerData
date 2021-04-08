@@ -168,9 +168,20 @@ public struct GameModeData
 
 }
 
+[System.Serializable]
+public struct PlayerLevel
+{
+    public int Level;
+    public int RequiredExperience;
+}
 
+[System.Serializable]
 
-
+public struct PlayerLevelMasterData
+{
+    public bool Status;
+    public List<PlayerLevel> Data;
+}
 
 [System.Serializable]
 public struct MissionDescriptor
@@ -212,6 +223,7 @@ public class TankMasterData
     public HangerMasterData HangerMasterData;
     public SlotMasterData SlotMasterData;
     public WeaponMasterData WeaponMasterData;
+    public PlayerLevelMasterData PlayerLevelMasterData;
 
 
     public TankMasterData()
@@ -223,7 +235,7 @@ public class TankMasterData
         HangerMasterData.Data = new List<Hanger>();
         SlotMasterData.Data = new List<Slot>();
         WeaponMasterData.Data = new List<Weapon>();
-
+        PlayerLevelMasterData.Data = new List<PlayerLevel>();
 
     }
 }
@@ -248,6 +260,7 @@ public class BoomTanksMasterData : MonoBehaviour
     public HangerMasterDataSC HangerMasterDataSC;
     public SlotMasterDataSC SlotMasterDataSC;
     public WeaponMasterDatasc WeaponMasterDatasc;
+    public PlayerLevelMasterDataSC PlayerLevelMasterDataSC;
 
     #endregion
 
@@ -263,23 +276,24 @@ public class BoomTanksMasterData : MonoBehaviour
         TankMasterData.HangerMasterData = HangerMasterDataSC.HangerMasterData;
         TankMasterData.SlotMasterData = SlotMasterDataSC.SlotMasterData;
         TankMasterData.WeaponMasterData = WeaponMasterDatasc.WeaponMasterData;
+        TankMasterData.PlayerLevelMasterData = PlayerLevelMasterDataSC.PlayerLevelMasterData;
 
-        SaveJsonDataInStreamingAssetFolder(TankMasterData, "/BoomTanksMAsterData");
+        SaveJsonDataInStreamingAssetFolder(TankMasterData, "BoomTanksMasterData.json");
     }
 
     public void SaveJsonDataInStreamingAssetFolder<T>(T t, string fileName)
     {
 
         string jsonString = JsonUtility.ToJson(t);
-        string filePath = Application.streamingAssetsPath + fileName;
-        Debug.Log("saving to  " + filePath);
+        string filepath = Path.Combine(Application.streamingAssetsPath, fileName);
+        Debug.Log("saving to  " + filepath);
 
-        if (File.Exists(Application.streamingAssetsPath + fileName))
+        if (File.Exists(filepath))
         {
-            File.Delete(Application.streamingAssetsPath + fileName);
+            File.Delete(filepath);
         }
 
-        File.WriteAllText(Application.streamingAssetsPath + fileName, jsonString);
+        File.WriteAllText(filepath, jsonString);
 
 
     }
